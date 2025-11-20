@@ -1,0 +1,4 @@
+#ifndef LABA6VOSIR_GAME_H
+#define LABA6VOSIR_GAME_H
+
+#endif //LABA6VOSIR_GAME_H
