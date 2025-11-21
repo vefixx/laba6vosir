@@ -102,7 +102,6 @@ void GameLoop() {
     {-1, -1, -1},
     {-1, -1, -1},
     {-1, -1, -1},
-    {-1, -1, -1},
   };
 
   while (true) {
@@ -131,13 +130,16 @@ void GameLoop() {
 
     step_count++;
 
-    if (step_count >= 5) {
-      bool is_win_step = CheckWin(field);
+    bool is_win_step = CheckWin(field);
 
+    if (step_count >= 5 && is_win_step) {
       ClearConsole();
       WriteField(step_count, field);
 
       cout << "Победа игрока №" << current_player << " (" << current_step << ")!" << endl;
+      break;
+    } else if (step_count == 9) {
+      cout << "Ничья!" << endl;
       break;
     } else {
       current_step = current_step == "н" ? "к" : "н";
