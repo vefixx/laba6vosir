@@ -1,6 +1,5 @@
-#ifndef KRESTIKINOLIKI2_UTILS_H
-#define KRESTIKINOLIKI2_UTILS_H
+#ifndef UTILS_H
+#define UTILS_H
 
 void ClearConsole();
-
-#endif //KRESTIKINOLIKI2_UTILS_H
+#endif // UTILS_H

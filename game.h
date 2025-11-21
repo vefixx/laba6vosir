@@ -1,7 +1,7 @@
-#ifndef KRESTIKINOLIKI2_GAME_H
-#define KRESTIKINOLIKI2_GAME_H
-
+#ifndef GAME_H
+#define GAME_H
 #include <vector>
+#include <string>
 
 using namespace std;
 
@@ -11,4 +11,4 @@ void InputStep(int&, int&);
 bool HandleStep(int, int, string, vector<vector<int>>&);
 bool CheckWin(const vector<vector<int>>& field);
 
-#endif //KRESTIKINOLIKI2_GAME_H
+#endif // GAME_H

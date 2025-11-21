@@ -15,9 +15,18 @@ int main() {
 
   string a;
 
-  // while (true) {
-  //
-  // }
+  while (true) {
+    ClearConsole();
+    GameLoop();
+
+    cout << "Желаете сыграть еще раз? (да/нет): ";
+    cin >> a;
+
+    if (a == "да")
+      continue;
+    cout << "Вы закрыли игру.";
+    break;
+  }
 
   return 0;
 }
